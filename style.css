@@ -135,5 +135,7 @@ h5 {
 @media screen and (max-width: 674px) {
     .main-content {
         grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 }
