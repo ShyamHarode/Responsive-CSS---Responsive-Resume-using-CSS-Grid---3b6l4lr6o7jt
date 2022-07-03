@@ -1,6 +1,6 @@
-*{
+* {
+    margin: 0%;
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -79,12 +79,15 @@ body {
 }
 
 .right-section {
-    /* grid-column: span 1/span 2; */
-    background-color: rgb(125, 182, 218);
+    display: grid;
+    grid-column: span 1/span 2;
+    background-color: rgb(208, 225, 236);
     word-wrap: break-word;
 }
 
 .right-main-content {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
     padding: 2rem 3rem;
 }
 
@@ -96,12 +99,19 @@ body {
     letter-spacing: 1px;
 }
 
-.cont {
-    padding-left: 3em;
+.sub {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.8rem;
+    padding: 0.2rem;
 }
 
-.projects ul {
-    padding-left: 3em;
+.heading {
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: uppercase;
 }
 
 .icon i {
@@ -127,5 +137,3 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-/* Write CSS code below */
